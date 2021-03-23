@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XpertGroup.Users.Application.Interfaces\XpertGroup.Users.Application.Interfaces.csproj" />
+    <ProjectReference Include="..\..\1.Domain\XpertGroup.Users.Domain.Entities\XpertGroup.Users.Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\1.Domain\XpertGroup.Users.Domain.Services\XpertGroup.Users.Domain.Services.csproj" />
+  </ItemGroup>
+</Project>

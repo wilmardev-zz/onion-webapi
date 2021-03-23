@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
+    <Folder Include="IntegrationTests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\1.Domain\XpertGroup.Users.Domain.Interfaces\XpertGroup.Users.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\..\1.Domain\XpertGroup.Users.Domain.Services\XpertGroup.Users.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\1.Domain\XpertGroup.Users.Domain.Entities\XpertGroup.Users.Domain.Entities.csproj" />
+    <ProjectReference Include="..\..\4.WebApi\XpertGroup.Users.WebApi\XpertGroup.Users.WebApi.csproj" />
+  </ItemGroup>
+</Project>
